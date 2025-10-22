@@ -18,6 +18,24 @@ const allStyles = StyleSheet.create({
         gap: 5,
     },
 
+    loginButton: {
+        padding: 16,
+        borderRadius: 12,
+        alignItems: "center",
+        width: "100%",
+        backgroundColor: "#FAD0E7",
+    },
+
+    loginButtonText: {
+        fontSize: 18,
+    },
+
+    loginButtonGroup: {
+        width: "80%",
+        gap: 5,
+        marginTop: 10,
+    },
+
     
 
     //Register

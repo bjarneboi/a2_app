@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
 import { styles } from "../styles";
 import InputField from "../components/InputField";
+import Button from "../components/Button";
 
 export default function Login() {
   return (
@@ -21,7 +22,24 @@ export default function Login() {
           onChangeText={(text) => console.log(text)}
         />
       </View>
+      <View style={styles.loginButtonGroup}>
+        <Button
+          text="Logg inn"
+          path="/home"
+          buttonStyle={styles.loginButton}
+          buttonTextStyle={styles.loginButtonText}
+        />
+      </View>
+      <View style={styles.loginButtonGroup}>
+        <Text>Ny bruker?</Text>
+        <Button
+          text="Registrer deg her"
+          path="/register"
+          buttonStyle={styles.loginButton}
+          buttonTextStyle={styles.loginButtonText}
+        />
+      </View>
       <StatusBar style="auto" />
-    </View>     
+    </View>
   );
 }

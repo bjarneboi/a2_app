@@ -25,7 +25,7 @@ export default function Login() {
       <View style={styles.loginButtonGroup}>
         <Button
           text="Logg inn"
-          path="/home"
+          path="/login"
           buttonStyle={styles.loginButton}
           buttonTextStyle={styles.loginButtonText}
         />

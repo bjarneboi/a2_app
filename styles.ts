@@ -39,6 +39,23 @@ const allStyles = StyleSheet.create({
     
 
     //Register
+        registerScreenContainer: {
+        flex: 1,
+        width: "100%",
+    },
+
+    registerContainer: {
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        gap: 20,
+        alignSelf: "center",
+    },
+
+    registerText: {
+        fontSize: 18,
+    },
 
     
     //InputField

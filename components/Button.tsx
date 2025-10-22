@@ -9,7 +9,7 @@ import {
   TextStyle,
 } from "react-native";
 
-import { router } from "expo-router";
+import { router, useRouter } from "expo-router";
 
 import { styles } from "../styles";
 
@@ -26,12 +26,10 @@ export default function Button({
   buttonStyle,
   buttonTextStyle,
 }: ButtonProps) {
-  const handlePress = () => {
-    router.push(path);
-  };
+  const router = useRouter();
 
   return (
-    <Pressable onPress={handlePress} style={buttonStyle}>
+    <Pressable onPress={() => router.push(path)} style={buttonStyle}>
       <Text style={buttonTextStyle}>{text}</Text>
     </Pressable>
   );

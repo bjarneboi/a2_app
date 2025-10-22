@@ -4,22 +4,38 @@ const allStyles = StyleSheet.create({
     // Login
     loginContainer: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+    paddingBottom: 30,
+    gap: 25,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#ffffffff",
     },
+
+    inputGroup: {
+        width: "80%",
+        gap: 5,
+    },
+
+    
 
     //Register
 
     
     //InputField
     inputFieldContainer: {
-        width: '80%',
         borderColor: '#ccc',
         borderWidth: 1,
         borderRadius: 5,
         padding: 10,
         marginVertical: 10,
+    },
+
+    inputFieldText: {
+        fontSize: 32,
+        textAlign: "center",
+        width: "100%",
     },
 });
 

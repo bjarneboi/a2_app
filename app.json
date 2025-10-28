@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "a2_app",
-    "slug": "a2_app",
+    "name": "cleanlist",
+    "slug": "cleanlist",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,23 +13,27 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "googleServicesFile": "./google-services.json",
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.bjarneboi.a2_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "@react-native-firebase/app", 
+      "@react-native-firebase/app",
       [
-        "expo-build-properties", {
+        "expo-build-properties",
+        {
           "ios": {
             "useFrameworks": "static"
           }
